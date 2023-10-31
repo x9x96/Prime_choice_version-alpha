@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "pollster/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "pollster/wsgi.py"
+      }
+    ]
+}
